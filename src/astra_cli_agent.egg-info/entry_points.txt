@@ -1,0 +1,2 @@
+[console_scripts]
+astra = astra_cli.main:app

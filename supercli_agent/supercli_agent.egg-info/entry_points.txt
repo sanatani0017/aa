@@ -1,0 +1,2 @@
+[console_scripts]
+supercli = supercli.__main__:main

@@ -5,4 +5,6 @@ __all__ = [
 	"strings",
 	"web",
 	"coding",
+	"repo",
+	"crawler",
 ]

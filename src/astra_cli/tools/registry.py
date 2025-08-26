@@ -35,6 +35,14 @@ class ToolRegistry:
 		return list(self._tools.values())
 
 	def register_default_tools(self) -> None:
-		from . import fs, shell, strings, web, coding
-		for t in fs.default_tools() + shell.default_tools() + strings.default_tools() + web.default_tools() + coding.default_tools():
+		from . import fs, shell, strings, web, coding, repo, crawler
+		for t in (
+			fs.default_tools()
+			+ shell.default_tools()
+			+ strings.default_tools()
+			+ web.default_tools()
+			+ coding.default_tools()
+			+ repo.default_tools()
+			+ crawler.default_tools()
+		):
 			self.register(t)

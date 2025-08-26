@@ -45,6 +45,15 @@ class ReActPlanner:
 				obs_text.append(f"{name} -> {str(result)[:2000]}")
 			messages.append({"role": "user", "content": "\n".join([f"Observation: {o}" for o in obs_text])})
 
+	def plan_only(self, task: str, system: Optional[str] = None) -> str:
+		prompt = (
+			"You are planning only. Provide: Goals, Risks, Steps, Tools to use, and Stop. "
+			"Do NOT execute tools."
+		)
+		resp = self.client.generate([{"role": "user", "content": f"Task: {task}\n\n{prompt}"}], tools_schema=None, system=system)
+		text, _ = _parse_gemini_response(resp)
+		return text
+
 
 def _parse_gemini_response(resp: Dict[str, Any]) -> tuple[str, List[Dict[str, Any]]]:
 	text_out = ""

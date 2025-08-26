@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: ultra-cli-agent
+Version: 0.1.0
+Summary: Ultra-powerful autonomous AI coding pair programmer CLI (Gemini 2.5 Flash Lite)
+Author: You
+Requires-Python: >=3.10
+Requires-Dist: requests>=2.32
+Requires-Dist: beautifulsoup4>=4.12
+Requires-Dist: tqdm>=4.66
+Requires-Dist: rich>=13.7
+Requires-Dist: typer>=0.12
+Requires-Dist: pydantic>=2.7
+Requires-Dist: httpx>=0.27
+Requires-Dist: uvloop; platform_system == "Linux"

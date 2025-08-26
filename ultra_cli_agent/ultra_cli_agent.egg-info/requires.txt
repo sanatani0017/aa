@@ -1,0 +1,10 @@
+requests>=2.32
+beautifulsoup4>=4.12
+tqdm>=4.66
+rich>=13.7
+typer>=0.12
+pydantic>=2.7
+httpx>=0.27
+
+[:platform_system == "Linux"]
+uvloop

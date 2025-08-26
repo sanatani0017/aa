@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+supercli/__init__.py
+supercli/__main__.py
+supercli/core/agent.py
+supercli/core/config.py
+supercli/core/gemini_client.py
+supercli/ui/cli.py
+supercli_agent.egg-info/PKG-INFO
+supercli_agent.egg-info/SOURCES.txt
+supercli_agent.egg-info/dependency_links.txt
+supercli_agent.egg-info/entry_points.txt
+supercli_agent.egg-info/requires.txt
+supercli_agent.egg-info/top_level.txt
